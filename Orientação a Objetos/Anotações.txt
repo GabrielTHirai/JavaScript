@@ -1,0 +1,12 @@
+O projeto para esse módulo de aula vai ser para um banco. 
+O banco em questão pede para registrar o usuário e criar uma conta corrente para o mesmo.
+
+Para cada cliente o banco vai informar o nome, saldo, cpf e a agencia. Isso vai ser repetido N vezes. Para que isso seja
+possivel sem ter que repetir o código muitas de muitas vezes, se cria um "Molde".
+Em JS para criar um molde se cria uma classe
+
+index.js: vai servir para chamar um novo cliente (o nome new é literal). Cria-se uma variável e logo a frente chama a classe Cliente.
+index.js: nome da variável.atributo
+index.js: os "()" indica que é um operação e não é só uma variável
+index.js: this serve para indicar que a vai ser usado a conta corrente não importa de qual usuario vai ser
+index.js: o # é usado para indicar atributos privados
