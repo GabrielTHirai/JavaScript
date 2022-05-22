@@ -9,4 +9,6 @@ index.js: vai servir para chamar um novo cliente (o nome new é literal). Cria-s
 index.js: nome da variável.atributo
 index.js: os "()" indica que é um operação e não é só uma variável
 index.js: this serve para indicar que a vai ser usado a conta corrente não importa de qual usuario vai ser
-index.js: o # é usado para indicar atributos privados
+index.js: o # é usado para indicar atributos privados. Nesse caso o atributo não fica visivel para qualquer pessoa mexer
+e somente dentro da classe fica disponivel para ser acessado
+index.js: o valor sacado vai ser returnado dentro do if da função sacar, o return trava a execução das próximas linhas
