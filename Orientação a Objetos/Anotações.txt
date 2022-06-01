@@ -16,3 +16,33 @@ index.js: o valor sacado vai ser returnado dentro do if da função sacar, o ret
 ContaPoupanca.js: Para boas praticas, o copiar e colar código repetido é errado, então se cria uma classe "conta", ja que se repete sempre em contas 
 
 ContaCorrente.js e Conta.js: quando se aplica o extends, algumas coisas repetidas não precisa estar ali, como por exemplo o que tem dentro do constructor, é repetido, então na ContaCorrente.js o constructor fica menor ja que ele ta herdando tudo da Conta.js
+tag super: essa tag serve para puxar o constructor de uma classe que foi herdada
+tag super: {
+    um teste bem basico:
+    
+    teste(){
+        super.teste();
+        console.log("Teste na classe conta corrente");
+    }
+
+    quando se coloca a mesma coisa na .js "mãe"(que no caso vai ser a Conta.js) o que está na Conta vai ser executado primeiro,
+    ja que a tag super está puxando da mãe primeiro.
+}
+
+privado e protegido: aprendemos que as variaveis privadas só podem ser usadas dentro da classe, porém e se eu tiver que utilizar fora da classe?
+ai entra o protegido, que nada mais é que a variavel privada, porém se for herdada para outra classe, ela pode ser usada, então ela se torna protegida
+podemos ver isso na ContaCorrente.js, no sacar
+
+throw new Error: serve para dar uma mensagem de erro e parar a execução do programa, dessa forma se algo estiver fora do padrão estabelecido, vai dar uma mensagem de erro
+isso é bom para delimitar o programa
+
+classe abstrata: não pode dar um new, não se utiliza ela na execução da index, mas ela é herdada
+
+metodo abstrato: não é para ser chamado diretamente, e sim sobrescrito
+
+polimorfismo: diferentes objetos/classes sendo tratadas da mesma forma
+
+"autenticar" in autenticavel: o in vai verificar se o "autenticar" existe dentro do objeto autenticavel
+autenticavel.autenticar instanceof Function: nesse caso vai verificar se o autenticavel.autenticar é uma instancia de uma função
+
+ducky type: em linguagens fracamente tipadas é usada o ducky type. Não interessa o tipo, interessa o que o objeto consegue fazer

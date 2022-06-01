@@ -4,8 +4,13 @@ export class Cliente{/* serve para exportar isso. Vai mostrar que essa classe va
         return this._cpf;
     }
 
-    constructor(nome, cpf){
+    constructor(nome, cpf, senha){
         this.nome = nome;
-        this._cpf = cpf;
+        this._cpf = cpf; 
+        this._senha = senha;
+    }
+
+    autenticar(){
+        return true;
     }
 }
