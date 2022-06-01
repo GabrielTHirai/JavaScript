@@ -12,3 +12,7 @@ index.js: this serve para indicar que a vai ser usado a conta corrente não impo
 index.js: o # é usado para indicar atributos privados. Nesse caso o atributo não fica visivel para qualquer pessoa mexer
 e somente dentro da classe fica disponivel para ser acessado
 index.js: o valor sacado vai ser returnado dentro do if da função sacar, o return trava a execução das próximas linhas
+
+ContaPoupanca.js: Para boas praticas, o copiar e colar código repetido é errado, então se cria uma classe "conta", ja que se repete sempre em contas 
+
+ContaCorrente.js e Conta.js: quando se aplica o extends, algumas coisas repetidas não precisa estar ali, como por exemplo o que tem dentro do constructor, é repetido, então na ContaCorrente.js o constructor fica menor ja que ele ta herdando tudo da Conta.js
